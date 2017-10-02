@@ -19,7 +19,7 @@ export class HomePage extends React.Component {
                             <hr className="my-2" />
                             <p>Boilerplate to build .NET single page application where everything is integrated and ready for your customization.</p>
                             <p className="lead">
-                                <Button href="https://github.com/mocoding-software/netcore-typescript-react-boilerplate" color="primary">Learn More</Button>
+                                <Button href="https://github.com/mocoding-software/spa-template" color="primary">Learn More</Button>
                             </p>
                         </Jumbotron>
                     </Col>

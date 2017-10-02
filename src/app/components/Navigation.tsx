@@ -19,7 +19,7 @@ export class Navigation extends React.Component<{}, NavigationState> {
 
     public render(): JSX.Element {
         return (
-            <Navbar toggleable className="mb-4"  color="faded" light>
+            <Navbar toggleable className="mb-4"  color="faded" dark>
                 <NavbarToggler right onClick={this.toggle} />
                 <NavbarBrand href="/">spa-template</NavbarBrand>
                 <Collapse isOpen={this.state.isOpen} navbar>

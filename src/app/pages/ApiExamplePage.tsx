@@ -3,7 +3,7 @@ import autobind from "autobind-decorator";
 import { CodeSample } from "components";
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { Col, Nav, NavItem, NavLink, Row } from "reactstrap";
+import { Button, Col, Nav, Row } from "reactstrap";
 import { connect } from "store";
 import { ExampleApiState, GetServerTime, RefreshServerTime } from "store/example";
 
@@ -45,11 +45,7 @@ export class ApiExamplePage extends React.Component<ApiExamplePageProps & ApiExa
                     <title>Spa-Template - Api Example Page</title>
                 </Helmet>
                 <div className="mb-4">
-                    <Nav pills={true}>
-                        <NavItem>
-                            <NavLink href="#" onClick={this.onRefresh}>Refresh</NavLink>
-                        </NavItem>
-                    </Nav>
+                    <Button onClick={this.onRefresh} color="primary">Refresh</Button>
                 </div>
                 <Row>
                     <Col sm={3}>
